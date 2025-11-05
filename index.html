@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InterWeU - All-in-One Placement Portal with Tinder-like job discovery, proctoring, and interview recording. The complete recruitment solution for students, recruiters, and placement cells.">
+  <meta name="keywords" content="placement portal, recruitment, job discovery, ATS, proctoring, interview platform, campus placement">
+  <meta name="author" content="InterWeU">
+  
+  <meta property="og:title" content="InterWeU - All-in-One Placement Portal">
+  <meta property="og:description" content="Recruitment, Proctoring, and Interviews—All in One Portal. Tinder-like job discovery for students, deep ATS for recruiters.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://interweu.com">
+  <meta property="og:image" content="https://interweu.com/og-image.png">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="InterWeU - All-in-One Placement Portal">
+  <meta name="twitter:description" content="Recruitment, Proctoring, and Interviews—All in One Portal">
+  <meta name="twitter:image" content="https://interweu.com/og-image.png">
+  
+  <link rel="canonical" href="https://interweu.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  
+  <title>InterWeU - All-in-One Placement Portal | Recruitment, Proctoring, Interviews</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-supabase-url="YOUR_SUPABASE_URL" data-supabase-key="YOUR_SUPABASE_ANON_KEY">
+  
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="4" y="4" width="24" height="24" rx="6" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 14L16 18L20 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">InterWeU</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it Works</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="btn" data-variant="primary" onclick="scrollToLeadForm()">Get Early Access</button>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Recruitment, Proctoring, and Interviews—All in One Portal</h1>
+          <p class="hero-subtitle">Tinder-like job discovery for students, deep ATS for recruiters, and built-in proctoring & interview recording.</p>
+          <div class="hero-cta">
+            <button class="btn" data-variant="primary" onclick="scrollToLeadForm()">Get Early Access</button>
+            <a href="mailto:demo@interweu.com?subject=Demo Request" class="btn" data-variant="secondary">Book a Demo</a>
+          </div>
+          <div class="hero-badges">
+            <div class="badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M23 7l-7 5 7 5V7z"/>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+              </svg>
+              <span>WebRTC Interviews</span>
+            </div>
+            <div class="badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+              <span>Proctoring</span>
+            </div>
+            <div class="badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+              <span>ATS Match</span>
+            </div>
+            <div class="badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+              <span>Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-background"></div>
+    </section>
+
+    <section class="swipe-demo" id="swipe-demo">
+      <div class="container">
+        <h2 class="section-title">Discover Jobs Like Never Before</h2>
+        <div class="swipe-container">
+          <div class="card-stack" id="cardStack">
+          </div>
+          <div class="swipe-controls">
+            <button class="swipe-btn" data-action="pass" aria-label="Pass on this job">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+              <span>Pass</span>
+            </button>
+            <button class="swipe-btn" data-action="apply" aria-label="Apply to this job">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Apply</span>
+            </button>
+          </div>
+        </div>
+        <p class="swipe-explainer">Swipe to discover roles curated for your profile.</p>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Everything You Need, All in One Place</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3>Auth & Identity</h3>
+            <p>Secure authentication with OAuth2, college email verification, and multi-factor authentication.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3>Profiles & Verification</h3>
+            <p>Build verified profiles with skill badges, project showcases, and transcript uploads.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3>Job Discovery</h3>
+            <p>Swipe through AI-matched opportunities. Like Tinder, but for your dream job.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+            </div>
+            <h3>Resume Builder & ATS Analyzer</h3>
+            <p>Create ATS-optimized resumes with real-time scoring and keyword suggestions.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3>Assessment & Proctoring</h3>
+            <p>Conduct secure assessments with screen and camera recording to ensure integrity.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 7l-7 5 7 5V7z"/>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+              </svg>
+            </div>
+            <h3>Interview Platform</h3>
+            <p>Live video interviews with screen sharing, collaborative code editor, and automatic transcription.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <h3>Recruiter ATS & Analytics</h3>
+            <p>Manage your entire pipeline with advanced analytics, reporting, and candidate tracking.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+              </svg>
+            </div>
+            <h3>Notifications & Calendar</h3>
+            <p>Stay updated with email and push notifications, plus seamless calendar integration.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3>Admin / Placement Cell Portal</h3>
+            <p>Set eligibility rules, manage placement drives, and generate comprehensive batch reports.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="workflow-grid">
+          <div class="workflow-column">
+            <div class="workflow-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3>Students</h3>
+            <ol class="workflow-steps">
+              <li>Create your profile</li>
+              <li>Swipe through opportunities</li>
+              <li>Apply to matched jobs</li>
+              <li>Attend interviews</li>
+            </ol>
+          </div>
+          
+          <div class="workflow-column">
+            <div class="workflow-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+            <h3>Recruiters</h3>
+            <ol class="workflow-steps">
+              <li>Post job descriptions</li>
+              <li>Shortlist candidates</li>
+              <li>Assess and interview</li>
+              <li>Hire top talent</li>
+            </ol>
+          </div>
+          
+          <div class="workflow-column">
+            <div class="workflow-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3>Placement Cells</h3>
+            <ol class="workflow-steps">
+              <li>Set eligibility rules</li>
+              <li>Run placement drives</li>
+              <li>Track outcomes</li>
+              <li>Generate reports</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="security" id="security">
+      <div class="container">
+        <div class="security-content">
+          <div class="security-icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h2 class="section-title">Security & Compliance</h2>
+          <p class="security-intro">Your data and privacy are our top priority. We implement industry-leading security measures.</p>
+          <ul class="security-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>TLS 1.3 encryption for all data in transit</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>AES-256 encryption for data at rest</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Comprehensive consent logging for recordings</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>GDPR-compliant data retention policies</span>
+            </li>
+          </ul>
+          <div class="security-links">
+            <a href="#privacy" class="security-link">Privacy Policy</a>
+            <a href="#terms" class="security-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <div class="pricing-toggle">
+          <button class="toggle-btn active" data-period="monthly">Monthly</button>
+          <button class="toggle-btn" data-period="annual">Annual <span class="save-badge">Save 20%</span></button>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Students</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">0</span>
+                <span class="period">/forever</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li>Unlimited job swipes</li>
+              <li>AI-powered matching</li>
+              <li>Resume builder & ATS scoring</li>
+              <li>Interview platform access</li>
+              <li>Application tracking</li>
+            </ul>
+            <button class="btn" data-variant="secondary" onclick="scrollToLeadForm()">Get Early Access</button>
+          </div>
+          
+          <div class="pricing-card featured">
+            <div class="featured-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Recruiters - Starter</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount monthly-price">199</span>
+                <span class="amount annual-price hidden">159</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li>Up to 50 active job postings</li>
+              <li>ATS & candidate pipeline</li>
+              <li>Proctored assessments</li>
+              <li>Video interview platform</li>
+              <li>Basic analytics & reporting</li>
+            </ul>
+            <button class="btn" data-variant="primary" onclick="scrollToLeadForm()">Request Access</button>
+          </div>
+          
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Recruiters - Growth</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount monthly-price">499</span>
+                <span class="amount annual-price hidden">399</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li>Unlimited job postings</li>
+              <li>Advanced ATS & automation</li>
+              <li>Custom assessment templates</li>
+              <li>AI interview insights</li>
+              <li>Advanced analytics & API access</li>
+            </ul>
+            <button class="btn" data-variant="secondary" onclick="scrollToLeadForm()">Request Access</button>
+          </div>
+          
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Placement Cells - Campus</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount monthly-price">999</span>
+                <span class="amount annual-price hidden">799</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li>Unlimited students & recruiters</li>
+              <li>Custom eligibility rules</li>
+              <li>Placement drive management</li>
+              <li>Comprehensive batch reports</li>
+              <li>Dedicated support & training</li>
+            </ul>
+            <button class="btn" data-variant="secondary" onclick="scrollToLeadForm()">Request Access</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lead-capture" id="lead-capture">
+      <div class="container">
+        <div class="lead-form-wrapper">
+          <h2>Join the Waitlist</h2>
+          <p>Be among the first to experience the future of campus recruitment.</p>
+          <form class="lead-form" id="leadForm">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="you@college.edu" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="role">I am a *</label>
+              <select id="role" name="role" required>
+                <option value="">Select your role</option>
+                <option value="student">Student</option>
+                <option value="recruiter">Recruiter</option>
+                <option value="placement">Placement Cell</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="org">Organization / College</label>
+              <input type="text" id="org" name="org" placeholder="Your institution or company" autocomplete="organization">
+            </div>
+            <button type="submit" class="btn" data-variant="primary" id="leadSubmitBtn">
+              <span class="btn-text">Get Early Access</span>
+              <span class="btn-loader hidden">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What makes InterWeU different from other placement portals?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>InterWeU combines three critical components in one platform: Tinder-style job discovery for students, enterprise-grade ATS for recruiters, and built-in proctoring and interview tools. This eliminates the need for multiple platforms and provides a seamless experience for all stakeholders.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How does the interview recording feature work? Is consent required?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>All interviews and assessments can be recorded with explicit consent from participants. Before any recording begins, both parties must acknowledge and consent. All consent actions are logged with timestamps for compliance. Recordings are encrypted and stored securely with controlled access.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What kind of proctoring is available?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Our proctoring system includes webcam monitoring, screen recording, tab-switching detection, and AI-based anomaly detection. Recruiters can configure proctoring levels based on their requirements, from basic monitoring to strict invigilation.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is my data secure and private?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. We use TLS 1.3 for data in transit and AES-256 encryption for data at rest. We're GDPR compliant and follow strict data retention policies. Your data is never shared without explicit consent, and you have full control over your information.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>When will InterWeU be available?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>We're currently in early access beta with select universities and companies. Join our waitlist to get notified when we open up to more institutions. Early access members will receive special pricing and priority support.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can we integrate InterWeU with our existing systems?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! We offer REST APIs and webhook integrations for seamless connectivity with your existing HR systems, learning management platforms, and calendar applications. Our Growth and Campus plans include full API access.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What kind of support do you provide?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>All plans include email support and comprehensive documentation. Growth and Campus plans include priority support with faster response times. Campus plan customers also receive dedicated onboarding, training sessions, and a dedicated success manager.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How does the AI matching work for students?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Our AI analyzes your profile, skills, projects, academic performance, and preferences to match you with relevant opportunities. The more you use the platform, the smarter it gets. You'll only see jobs that align with your profile and career goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <h2>Ready to Transform Your Placement Process?</h2>
+          <p>Get in touch with our team to schedule a personalized demo.</p>
+          <div class="contact-actions">
+            <a href="mailto:demo@interweu.com?subject=Demo Request&body=Hi, I'd like to schedule a demo of InterWeU." class="btn" data-variant="primary">Book a Demo</a>
+            <a href="mailto:hello@interweu.com" class="btn" data-variant="secondary">Contact Sales</a>
+          </div>
+          <p class="contact-note">We typically respond within 24 hours on business days.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="4" y="4" width="24" height="24" rx="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 14L16 18L20 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>InterWeU</span>
+          </div>
+          <p>Transforming campus recruitment with technology.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#security">Security</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms of Service</a></li>
+              <li><a href="#cookie">Cookie Policy</a></li>
+              <li><a href="#status">Status</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 InterWeU. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
